@@ -6,31 +6,300 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description” content="Hiroshi Takagi's Portfolio">
     <meta name="author” content="HiroshiTakagi">
-    <title>Bootstrap Sample</title>
+    <title>Hiroshi Takagi's Portfolio</title>
+    
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </head>
-  <body>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    
+    <style>
+      *[id]:before { 
+        display: block; 
+        content: " "; 
+        margin-top: -50px; 
+        height: 50px; 
+        visibility: hidden; 
+      }
 
-    <header>
-      <nav class="navbar navbar-default">
-        <div class="collapse navbar-collapse" id="opt-menu">
-          <ul class="nav navbar-nav>
-            <li>about</li>
-            <li>works</li>
-            <li>contact</li>
-          </ul>
+      #top { 
+        text-align: center;
+        background-image: url("bg_image01.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      #top h2 {
+        color: #fff;
+        padding: 12em 0;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      span.red {
+        color: red;
+      }
+      span.blue {
+        color: blue;
+      }
+
+      #profile {
+        padding-bottom: 4em;
+      }
+
+      #works {
+        padding-bottom: 20em;
+      }
+
+      #contact {
+        padding-bottom: 36em;
+      }
+
+      #contact h2 {
+        padding-bottom: 1em;
+      }
+
+      #contact ul {
+        margint-top: 2.5em;
+        text-align: center;
+        letter-spacing: 0.8em;"
+      }
+    </style>
+
+  </head>
+  
+    <body>
+      <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+
+          <div class="nav-header">
+            <button type="button" 
+                    class="navbar-toggle"
+                    data-toggle="collapse" 
+                    data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">高木 宏のポートフォリオ</a>
+          </div>
+          
+          <div id="menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#top">top</a></li>
+              <li><a href="#profile">profile</a></li>
+              <li><a href="#works">works</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </div>
+
         </div>
       </nav>
-    </header>
-    <div id="main">
-    </div>
-    <footer>
-    </footer>
+      </header>
 
+      <div id="main">
+        <div id="top">
+          <h2>高木 宏 のポートフォリオ</h2>
+        </div>
+  
+        <div id="profile" class="container">
+          <div class="row">
+            <h2 class="text-center">Profile</h2>
+
+            <div class="col-md-5 col-md-offset-2">
+              <dl>
+                <dt>氏名</dt>
+                <dd>高木 宏 （たかぎ ひろし） </dd>
+              </dl>
+
+              <dl>
+                <dt>Github</dt>
+                <dd><a href="https://github.com/HiroshiTakagi">HiroshiTakagi</a></dd>
+              </dl>
+              
+              <dl>
+                <dt>性別</dt>
+                <dd>男性</dd>
+              </dl>
+
+              <dl>
+                <dt>生年月日 </dt>
+                <dd>1957年8月21日</dd>
+              </dl>
+
+              <dl>
+                <dt>出身地・居住地</dt>
+                <dd>兵庫県神戸市生まれ・神戸育ち・神戸在住</dd>
+              </dl>
+              
+              <dl>
+                <dt>学歴</dt>
+                <dd>
+                  1976年3月　兵庫県立長田高等学校卒業<br />
+                  1981年3月　京都大学農学部畜産学科卒業
+                </dd>
+              </dl>
+
+              <dl>
+                <dt>資格・特技</dt>
+                <dd>
+                  普通自動車免許<br />
+                  TOEIC 800点と少し(1996年）<br />
+                  CCNA: 更新せずに失効してしまった(2003年頃）
+                </dd>
+              </dl>
+
+            </div> <!-- "col-md-5 col-md-offset-2" -->
+
+            <div class="col-md-5">
+              <dl>
+                <dt>好きなもの</dt>
+                <dd>
+                  <ul>
+                    <li>vi</li>
+                    <li>Ruby</li>
+                    <li>Macbookの感圧タッチトラックパッド</li>
+                    <li>iPhone6sの3D touch</li>
+                    <li>MC6809</li>
+                    <li>USキーボード配列</li>
+                    <li>HHKBのキーの底突き感</li>
+                    <li>豆大福</li>
+                    <li>志怪、志異、怪奇物語</li>
+                    <li>今昔物語集本朝世俗部・宇治拾遺物語</li>
+                  </ul>
+                </dd>
+              </dl>
+
+              <dl>
+                <dt>嫌いなもの</dt>
+                <dd>
+                  <ul>
+                    <li>Microsoft Windows</li>
+                    <li>BASCOM以外のMicrosoftの製品</li>
+                    <li>JISキーボード配列</li>
+                    <li>ストローク感が全く無い薄っぺらいキーボード</li></li>
+                    <li>「脱亜論」 </li>
+                    <li>懲罰的抑止力の実効性を語る人</li>
+                  </ul>
+                </dd>
+              </dl>
+
+            </div> <!-- "col-md-5 " -->
+
+            <div class="col-md-8 col-md-offset-2">
+              <dl>
+                <dt>近況</dt>
+                <dd>
+                  昨年夏に解雇されてからは、ぶらぶらとプータローしています。
+                  還暦目前で職が無くなると喪失感が半端無い。古本屋渉猟・読書と映画三昧で休養中。
+                  時間があるので、<span class="red">Macbook Pro 15"</span>を購入し、
+                  <span class="blue">Github, Qiita, Ruby on Rails</span>などの環境を整備して学習中。
+                </dd>
+              </dl>
+            </div> <!-- col-md-8 col-md-offset-2" -->
+
+          </div> <!-- "row" -->
+        </div> <!-- "profile" -->
+
+        <div id="works" class="container">
+          <div class="row">
+            <h2 class="text-center">Works</h2>
+
+            <div class="col-md-4">
+              <div class="panel panel-primary">
+               <div class="panel-heading">#1 bmscrp.rb</div>
+               <div class="panel-body">
+                 <p>Ruby のライブラリ mechanize, nokogiri を使い、
+                    読書メーターのサイトをスクレイピングして、データをExcelブックに取り出すプログラム</p>
+                 <a href="https://github.com/HiroshiTakagi/bmscraping">bmscrp.rb</a>
+               </div>
+             </div>
+            </div><!-- col-md-4 -->
+
+            <div class="col-md-4">
+              <div class="panel panel-success">
+               <div class="panel-heading">#2 jinzai-bot.rb</div>
+               <div class="panel-body">
+                 <p>偉大な翻訳家、故神西清の名翻訳文をつぶやくボット。</p>
+                 <p><span class="red">under construction</span></p>
+               </div>
+             </div>
+            </div><!-- col-md-4 -->
+
+            <div class="col-md-4">
+              <div class="panel panel-primary">
+               <div class="panel-heading">#3 メッセージボード</div>
+               <div class="panel-body">
+                 <p>簡易チャットサイト by Ruby on Rails</p>
+                 <p>TECH ACADEMY online bootcamp 課題 #1</p>
+               </div>
+             </div>
+            </div><!-- col-md-4 -->
+
+          </div><!-- row -->
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="panel panel-primary">
+               <div class="panel-heading">#4 Twitter クローン</div>
+               <div class="panel-body">
+                 <p>ツィッタークローン by Ruby on Rails</p>
+                 <p>TECH ACADEMY online bootcamp 課題 #2</p>
+               </div>
+             </div>
+            </div><!-- col-md-4 -->
+
+            <div class="col-md-4">
+              <div class="panel panel-primary">
+               <div class="panel-heading">#5 モノリスト</div>
+               <div class="panel-body">
+                 <p>モノリスト by Ruby on Rails</p>
+                 <p>TECH ACADEMY online bootcamp 課題 #3</p>
+               </div>
+             </div>
+            </div><!-- col-md-4 -->
+
+            <div class="col-md-4">
+              <div class="panel panel-primary">
+               <div class="panel-heading">#6 オリジナルサービス</div>
+               <div class="panel-body">
+                 <p>オリジナルサービス の開発を検討中です。</p>
+                 <p>TECH ACADEMY online bootcamp 課題 #4:</p>
+               </div>
+             </div>
+            </div><!-- col-md-4 -->
+
+          </div><!-- row -->
+        </div> <!-- "works" -->
+
+        <div id="contact" class="container">
+            <h2 class="text-center">Contact</h2>
+
+            <ul class="list-inline">
+              <li><a href="https://twitter.com/gollum13" target="_blank">
+                <i class="fa fa-twitter fa-4x"></i></a></li>
+              <li><a href="https://www.facebook.com/gollum.hiroshi" target="_blank">
+                <i class="fa fa-facebook-square fa-4x"></i></a></li>
+              <li><a href="http://bookmeter.com/u/22106/" target="_blank">
+                <i class="fa fa-book fa-4x"></i></a></li>
+              <li><a href="http://gollum13.hatenablog.com/" target="_blank">
+                <i class="fa fa-pencil-square-o fa-4x"></i></a></li>
+              <li><a href="https://github.com/HiroshiTakagi" target="_blank">
+                <i class="fa fa-github fa-4x"></i></a><li>
+            </ul>
+            
+        </div> <!-- "contact" -->
+      </div> <!-- "main" -->
+    <footer>
+      <p class="text-center">&copy; 2016 Hiroshi Takagi</p>
+    </footer>
   </body>
 </html>
